@@ -59,10 +59,6 @@ class Owner
     end
 
     @pets.clear
-    
-    # @pets.delete(:dogs)
-    # @pets.delete(:cats)
-    # @pets.delete(:fishes)
   end
   
   def list_pets
