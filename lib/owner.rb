@@ -21,12 +21,12 @@ class Owner
     @@all = []
   end
   
-  def self.count_all
+  def self.count
     @@all.count
   end
     
   def say_species
-    @species
+    "I am a #{@species}"
   end
   
   def buy_cat(name)
@@ -41,8 +41,24 @@ class Owner
     @pets[:fishes] << Fish.new(name)
   end
   
-  def walk_dog
+  def walk_dogs
     @pets[:dogs][0].mood = "happy"
+  end
+  
+  def play_with_cats
+    
+  end
+  
+  def feed_fish
+    
+  end
+  
+  def sell_pets
+    
+  end
+  
+  def list_pets
+    "I have #{@pets[:fishes].count} fish, #{@pets[:dogs].count} dog(s), and #{@pets[:cats].count} cat(s)."
   end
 
 end
