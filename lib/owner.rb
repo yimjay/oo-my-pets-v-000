@@ -54,7 +54,9 @@ class Owner
   end
   
   def sell_pets
-    @pets.delete()
+    @pets.delete(:dogs)
+    @pets.delete(:cats)
+    @pets.delete(:fishes)
   end
   
   def list_pets
