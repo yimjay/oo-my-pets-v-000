@@ -58,6 +58,9 @@ class Owner
       objects.each {|o| o.mood = "nervous"}
     end
 
+    @pets.each do |pet, objects|
+      objects.delete
+    end
     @pets.delete(:dogs)
     @pets.delete(:cats)
     @pets.delete(:fishes)
