@@ -58,6 +58,8 @@ class Owner
       objects.each {|o| o.mood = "nervous"}
     end
 
+    @pets.clear
+    
     # @pets.delete(:dogs)
     # @pets.delete(:cats)
     # @pets.delete(:fishes)
