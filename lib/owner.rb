@@ -20,6 +20,10 @@ class Owner
   def self.reset_all
     @@all = []
   end
+  
+  def self.count_all
+    @@all.count
+  end
     
   def say_species
     @species
