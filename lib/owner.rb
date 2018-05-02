@@ -59,11 +59,11 @@ class Owner
     end
 
     @pets.each do |pet, objects|
-      objects.delete
+      objects = []
     end
-    @pets.delete(:dogs)
-    @pets.delete(:cats)
-    @pets.delete(:fishes)
+    # @pets.delete(:dogs)
+    # @pets.delete(:cats)
+    # @pets.delete(:fishes)
   end
   
   def list_pets
