@@ -54,10 +54,7 @@ class Owner
   end
   
   def sell_pets
-    @pets.each do |pet, array|
-      array = []
-      pet.delete
-    end
+    @pets.delete(:dogs, :cats, :fishes)
   end
   
   def list_pets
