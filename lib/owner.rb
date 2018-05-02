@@ -18,7 +18,7 @@ class Owner
   end
   
   def self.reset_all
-    @@all = []
+    @@all.clear
   end
   
   def self.count
@@ -58,9 +58,9 @@ class Owner
       objects.each {|o| o.mood = "nervous"}
     end
 
-    @pets.delete(:dogs)
-    @pets.delete(:cats)
-    @pets.delete(:fishes)
+    # @pets.delete(:dogs)
+    # @pets.delete(:cats)
+    # @pets.delete(:fishes)
   end
   
   def list_pets
