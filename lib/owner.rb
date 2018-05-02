@@ -59,7 +59,7 @@ class Owner
     end
 
     @pets.each do |pet, objects|
-      objects = []
+      objects.delete
     end
     # @pets.delete(:dogs)
     # @pets.delete(:cats)
