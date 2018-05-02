@@ -42,19 +42,21 @@ class Owner
   end
   
   def walk_dogs
-    @pets[:dogs].mood = "happy"
+    @pets[:dogs][0].mood = "happy"
   end
   
   def play_with_cats
-    
+    @pets[:cats][0].mood = "happy"
   end
   
   def feed_fish
-    
+    @pets[:fishes][0].mood = "happy"
   end
   
   def sell_pets
-    
+    @pets[:dogs][0].mood = "nervous"
+    @pets[:cats][0].mood = "nervous"
+    @pets[:fishes][0].mood = "nervous"
   end
   
   def list_pets
