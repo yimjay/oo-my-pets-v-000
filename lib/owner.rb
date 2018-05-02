@@ -54,9 +54,7 @@ class Owner
   end
   
   def sell_pets
-    @pets.each do |pet, array|
-      pet.reset_all
-    end
+    self.reset_all
   end
   
   def list_pets
