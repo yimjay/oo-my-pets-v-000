@@ -26,7 +26,7 @@ class Owner
   end
     
   def say_species
-    "I am a #{@species}"
+    "I am a #{@species}."
   end
   
   def buy_cat(name)
@@ -42,7 +42,7 @@ class Owner
   end
   
   def walk_dogs
-    @pets[:dogs][0].mood = "happy"
+    @pets[:dogs].mood = "happy"
   end
   
   def play_with_cats
