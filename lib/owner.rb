@@ -40,5 +40,9 @@ class Owner
   def buy_fish(name)
     @pets[:fishes] << Fish.new(name)
   end
+  
+  def walk_dog
+    @pets[:dogs][0].mood = "happy"
+  end
 
 end
